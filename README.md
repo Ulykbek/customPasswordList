@@ -1,4 +1,4 @@
-# customPasswordList
+# customPasswordList with JTR Custom Rules
 My custom password list
 
 
