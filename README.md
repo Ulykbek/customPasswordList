@@ -1,12 +1,12 @@
 # customPasswordList with JTR Custom Rules
-My custom password list
+My custom password candidate generation
 
 
-Edit file password_list1, enter main words from which a complex password will be constructed.
+Edit password_list1 file, enter main words from which a complex password will be constructed.
 ```
 for i in $(cat password_list1); do echo $i; echo ${i}2019; echo ${i}2020; echo ${i}2021; echo ${i}2022; done > password_list2
 ```
-
+Use hashcat rule-engine
 ```
 hashcat --force --stdout password_list2 -r /usr/share/hashcat/rules/ > password_list3
 ```
